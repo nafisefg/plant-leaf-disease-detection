@@ -54,30 +54,3 @@ def select_infected_segment(img, label, kmeans):
 
     return infected_segment, infected_mask
 
-
-if __name__ == '__main__':
-    pass
-    # Load images and labels
-    # images, labels = load_images_from_directories(directories)
-    # _, kmeans = segment_image(images[0])
-    # select_infected_segment(images[0], labels[0], kmeans)
-#     # Preprocess all images
-#     preprocessed_images = [preprocess_image(img) for img in images]
-#
-#     # Segment all images
-#     # segmented_images = [segment_image(img) for img in preprocessed_images]
-#
-#     infected_segments = []
-#     for i, img in enumerate(preprocessed_images):
-#         segmented_img, kmeans = segment_image(img)
-#         infected_segment, infected_mask = select_infected_segment(img, labels[i], segmented_img, kmeans)
-#         infected_segments.append(infected_segment)
-#         cv2.imshow(f'{labels[i]}', images[i])
-#         cv2.imshow('pre', img)
-#         cv2.imshow('segmented', segmented_img)
-#         cv2.imshow('infected', infected_segment)
-#         cv2.waitKey(0)
-#         cv2.destroyAllWindows()
-    # infected_segment, infected_mask = select_infected_segment(img, segmented_img, kmeans)
-
-
